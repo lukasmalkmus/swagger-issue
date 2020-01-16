@@ -1,0 +1,21 @@
+definitions:
+  Data:
+    properties:
+      id:
+        type: string
+        x-go-name: ID
+    type: object
+    x-go-package: github.com/lukasmalkmus/swagger-issue/api
+paths:
+  /data:
+    get:
+      operationId: data
+      responses:
+        "200":
+          description: Data
+          schema:
+            $ref: '#/definitions/Data'
+      summary: Lists all data.
+      tags:
+      - Data
+swagger: "2.0"
